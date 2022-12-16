@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'enroll/css/bootstrap.min.css' %}">
+    <title>Core</title>
+    <style>
+        .success{
+            background: lightblue;
+            color: green;
+        }
+        .info{
+            color: blue;
+        }
+        .error{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center alert alert-danger">Class Based View  ModelForm CRUD App</h2>
+        {% block content %}
+        {% endblock content %}
+    </div>
+
+ <script src="{% static 'enroll/bootstrap.min.js' %}"></script>
+ <script src="{% static 'enroll/jquery.js' %}"></script>
+ <script src="{% static 'enroll/popper.js' %}"></script>
+</body>
+</html>
